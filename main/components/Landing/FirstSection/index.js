@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import { Button, Title, Icon } from 'components'
+import { emit } from 'startupjs'
 import './index.styl'
 
 const FirstSection = () => {
@@ -31,7 +32,7 @@ const FirstSection = () => {
           = 'Dolor nullam'
         Text.description 
           = 'Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.'
-    Button.button(text='Learn More' onPress=()=>{})
+    Button.button(text='Learn More' onPress=()=>emit('url','/about'))
     `
 }
 

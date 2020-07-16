@@ -13,7 +13,7 @@ const Footer = () => {
             = 'Aliquam sed mauris'
           Text.description 
             = 'Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.'
-          Button.button(text='Learn More' onPress=()=>{} type="transparent")
+          Button.button(text='Learn More' onPress=()=>emit('url','/about') type="transparent")
         View.bottom
           Text.title
             = 'Etiam feugiat'

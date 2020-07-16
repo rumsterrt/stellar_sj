@@ -7,6 +7,6 @@ export default (components = {}) => [
   {
     path: '/about',
     exact: true,
-    component: components.PLanding
+    component: components.PLearnMore
   }
 ]

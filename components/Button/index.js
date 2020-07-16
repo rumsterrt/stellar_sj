@@ -8,9 +8,9 @@ const types = {
   transparent: 'transparent'
 }
 
-const Button = ({ text, onPress, style, type = '' }) => {
+const Button = ({ text, onPress = () => {}, style, type = '' }) => {
   return pug`
-    TouchableOpacity.root(onPress=onPress && onPress() style=style styleName=type)
+    TouchableOpacity.root(onPress=onPress style=style styleName=type)
       = text
     `
 }
