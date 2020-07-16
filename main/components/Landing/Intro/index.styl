@@ -1,0 +1,50 @@
+.wrapper, .container
+    justify-content center
+    align-items center
+
+.wrapper
+    +tablet()
+        flex-direction row-reverse
+
+.container
+    +tablet()
+        flex 1
+        align-items flex-start
+
+.imageView
+    width 25u
+    height 25u
+    border-radius 100%
+    border solid 1px rgb(221, 221, 221)
+    padding 1u
+    display flex
+    justify-content center
+    align-items center
+    +tablet()
+        margin-left 4u
+    +wide()
+        width 42u
+        height 42u
+
+.image
+    width 100%
+    height 100%
+    border-radius 100%
+
+.title
+    margin-top 3u
+    color black
+
+.description
+    color #636363
+    font-size 2u
+    margin-top 3u
+    line-height 3u
+    text-align center
+    +tablet()
+        text-align left
+
+.button
+    margin-top 3u
+    +tablet()
+        width auto

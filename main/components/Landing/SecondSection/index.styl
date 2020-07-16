@@ -1,0 +1,48 @@
+.title, .description
+    color black
+
+.title
+    margin-top 4u
+
+.description, .content
+    color #636363
+    font-size 2u
+    margin-top 4u
+    line-height 3u
+    text-align justify
+
+.button
+    margin-top 3u
+    +tablet()
+        width auto
+
+.statistic
+    margin-top 4u
+    width 100%
+    +tablet()
+        flex-direction row
+
+.block
+    padding 5u
+    justify-content center
+    align-items center
+    width 100%
+    &.first
+        border-radius 1u 1u 0 0
+    &.last
+        border-radius 0 0 1u 1u
+    +tablet()
+        width 20%
+        padding 5u
+        &.first
+            border-radius 1u 0 0 1u
+        &.last
+            border-radius 0 1u 1u 0
+
+.name
+    font-size 2.5u
+    color white
+
+.value
+    font-size 5u
+    color white
