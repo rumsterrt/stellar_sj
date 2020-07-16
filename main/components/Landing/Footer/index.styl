@@ -1,10 +1,12 @@
 .root
     display flex
-    justify-content center
-    align-items center
+    justify-content flex-start
+    align-items flex-start
     margin 4u 0 10u 0
     padding 0 2u 0 2u
     box-sizing border-box
+    +tablet()
+            align-items center
 
 .container
     display flex
@@ -73,9 +75,7 @@
     font-size 1.2u
     margin-top 5u
     line-height 2u
-    text-align left
     +tablet()
         font-size 1.5u
         line-height 2u
-        text-align center
 

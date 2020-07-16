@@ -40,7 +40,9 @@ const SecondSection = () => {
   return pug`
     Title.title(text='Ipsum consequat')
     Text.description 
-      = 'Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.'
+      = 'Donec imperdiet consequat consequat. Suspendisse feugiat congue'
+      br
+      = 'posuere. Nulla massa urna, fermentum eget quam aliquet.'
     View.statistic
       each block, index in statisticBlocks
         View.block(

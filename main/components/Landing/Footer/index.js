@@ -10,7 +10,7 @@ const Footer = () => {
       View.container
         View.top
           Text.title
-            = 'Ipsum sed adipiscing'
+            = 'Aliquam sed mauris'
           Text.description 
             = 'Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.'
           Button.button(text='Learn More' onPress=()=>{} type="transparent")
