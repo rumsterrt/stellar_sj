@@ -51,7 +51,7 @@ const SecondSection = () => {
           key=block.name
           styleName= (index === 0 ? 'first' : index === statisticBlocks.length - 1 ? 'last' : '')
         )
-          Icon(name=block.icon size=50 color="white")
+          Icon.icon(name=block.icon size=80 color="white")
           Text.value #{block.value}
           Text.name #{block.name}
     Text.content 

@@ -18,7 +18,7 @@ const PLanding = () => {
   return pug`
     Header  
       Image.rocket(source={uri:base + '/img/logo.svg'})
-      Text.logoText STELLAR
+      Text.logoText Stellar
       Text.description 
         = 'Just another free, fully responsive site'
         br

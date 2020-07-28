@@ -2,14 +2,18 @@
   background white
 
 .rocket
-    width 85px
-    height 85px
+    width 10u
+    height 10u
 
 .logoText, .description
     color white
 
 .logoText
     font-size 4u
+    margin-top 4u
+    +wide()
+        font-size 6u
+        margin-top 5u
 
 .description
     color rgba(255, 255, 255, 0.65)
@@ -17,4 +21,7 @@
     margin-top 2u
     line-height 3u
     text-align center
+    +wide()
+        font-size 3u
+        line-height 4u
   
