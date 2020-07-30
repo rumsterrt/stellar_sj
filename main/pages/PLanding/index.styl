@@ -24,4 +24,27 @@
     +wide()
         font-size 3u
         line-height 4u
+
+.nav
+    flex-direction row
+    align-items center
+    justify-content center
+    background-color #f7f7f7
+    padding 2u 0
+    border none
+    display none
+    +tablet()
+        display flex
+
+.navItem
+    width auto
+    margin-left 2u
+    border none
+    background transparent
+    &.first
+        margin-left 0
+    &.active
+        background #fff
+    +tablet()
+        padding 0 2u
   
