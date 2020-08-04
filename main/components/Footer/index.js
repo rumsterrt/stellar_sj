@@ -18,7 +18,7 @@ const Footer = () => {
           Text.title
             = 'Etiam feugiat'
           View.table
-            View.row
+            View.row.first
               Text.name Address
               Text.value 1234 Somewhere Road • Nashville, TN 00000 • USA
             View.row
@@ -27,13 +27,12 @@ const Footer = () => {
             View.row
               Text.name Email
               Link.value information@untitled.tld
-          dl
           View.icons
-            Icon.icon(name=['fab',"twitter"] size=40 color='white' styleName='first')
-            Icon.icon(name=['fab',"facebook"] size=40 color='white')
-            Icon.icon(name=['fab',"instagram"] size=40 color='white')
-            Icon.icon(name=['fab',"github"] size=40 color='white')
-            Icon.icon(name=['fab',"dribbble"] size=40 color='white')
+            Button.icon(icon={name:['fab',"twitter"]} styleName='first')
+            Button.icon(icon={name:['fab',"facebook"]})
+            Button.icon(icon={name:['fab',"instagram"]})
+            Button.icon(icon={name:['fab',"github"]})
+            Button.icon(icon={name:['fab',"dribbble"]})
       Text.copyright 
         = '© Untitled. Design: '
         Link(onPress=() => emit('url', 'https://twitter.com/ajlkn'))

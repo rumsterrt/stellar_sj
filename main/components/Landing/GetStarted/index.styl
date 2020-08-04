@@ -14,10 +14,14 @@
     +tablet()
         flex-direction row
         justify-content center
+        margin-top 5u
 
 .button
-    margin-top 2u
-    +tablet()
-        width auto
-        &.second
+    &.second
+        margin-top 2u
+        +tablet()
+            margin-top 0
             margin-left 2u
+    +tablet()
+        margin-top 0
+        width auto
