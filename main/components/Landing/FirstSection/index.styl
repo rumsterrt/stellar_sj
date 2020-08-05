@@ -45,10 +45,15 @@
     box-sizing border-box
     margin-top 4u
     +tablet()
-        justify-content space-between
+        justify-content center
         align-items center
-        flex-direction row
-        flex-wrap wrap
+        flex-flow row wrap
+        margin-left -2u
+        margin-right -2u
+    +wide()
+        justify-content space-between
+        margin-left 0
+        margin-right 0
 
 .listItem
     justify-content center
@@ -56,10 +61,17 @@
     margin-top 5u
     &.first
         margin-top 0
+    &.secondRow
+        +tablet()
+            margin-top 6u
+        +wide()
+            margin-top 0
     +tablet()
         margin-top 0
-        width: calc(50% - 5u)
-    +desktop()
+        padding 0 2u
+        width: 50%
+    +wide()
+        padding 0
         width: calc(33% - 5u)
 
 

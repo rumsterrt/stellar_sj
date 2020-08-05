@@ -33,7 +33,7 @@ const FirstSection = () => {
     Title.title(text='Magna veroeros')
     View.list
       each item, index in items
-        View.listItem(key=index styleName=[{first: index === 0}])
+        View.listItem(key=index styleName=[{first: index === 0, secondRow: index > 1}])
           View.imageView
             View.icon
               Icon(name=item.icon size=65 color=item.color)
