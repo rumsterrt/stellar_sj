@@ -1,0 +1,57 @@
+.logoText, .logoDescription
+    color white
+
+.logoText
+    font-size 4u
+    +tablet()
+        font-size 5u
+    +wide()
+        font-size 6u
+
+.logoDescription
+    color rgba(255, 255, 255, 0.65)
+    font-size 2u
+    margin-top 2u
+    line-height 3u
+    text-align center
+    +tablet()
+        font-size 3u
+        line-height 4u
+    +wide()
+        font-size 4u
+        line-height 5u
+
+.block.first
+    margin-top 2u
+    +tablet()
+        margin-top 7u
+    +wide()
+        margin-top 12u
+
+.contentImage
+    width calc(100% + 6u)
+    height 16u
+    margin -5u -3u 0 -3u
+    border-radius 1u 1u 0 0
+    +tablet()
+        margin -8u -8u 0 -8u
+        width calc(100% + 16u)
+        height 44u
+    +wide()
+        margin -12u -12u 0 -12u
+        width calc(100% + 24u)
+        height 56u
+
+.title
+    margin-top 3u
+    color #636363
+    font-size 3u
+
+.description
+    color #636363
+    font-size 2u
+    margin-top 3u
+    line-height 3u
+    text-align left
+    +tablet()
+        text-align left

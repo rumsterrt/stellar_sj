@@ -1,0 +1,18 @@
+.root
+    display flex
+    padding 5u 3u 5u 3u
+    justify-content center
+    align-items center
+    background white
+    border-bottom solid 1px #dddddd
+    box-sizing border-box
+    &.first
+        border-top-left-radius 1u
+        border-top-right-radius 1u
+    &.last
+        border-bottom-left-radius 1u
+        border-bottom-right-radius 1u
+    +tablet()
+        padding 8u
+    +wide()
+        padding 12u 12u 12u 12u

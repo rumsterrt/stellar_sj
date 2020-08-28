@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.startupjs_stellar1">
+  package="com.stellar_sj">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

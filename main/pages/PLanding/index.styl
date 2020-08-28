@@ -1,0 +1,51 @@
+.main
+  background white
+
+.rocket
+    width 10u
+    height 10u
+
+.logoText, .description
+    color white
+
+.logoText
+    font-size 4u
+    margin-top 4u
+    +wide()
+        font-size 6u
+        margin-top 5u
+
+.description
+    color rgba(255, 255, 255, 0.65)
+    font-size 2u
+    margin-top 2u
+    line-height 3u
+    text-align center
+    +wide()
+        font-size 3u
+        line-height 4u
+
+.nav
+    flex-direction row
+    align-items center
+    justify-content center
+    background-color #f7f7f7
+    padding 2u 0
+    border none
+    display none
+    +tablet()
+        display flex
+
+.navItem
+    width auto
+    margin-left 2u
+    border none
+    background transparent
+    padding 0
+    &.first
+        margin-left 0
+    &.active
+        background #fff
+    +tablet()
+        min-width 18u
+  

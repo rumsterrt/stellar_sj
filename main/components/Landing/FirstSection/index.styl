@@ -1,0 +1,77 @@
+.imageView
+    width 16u
+    height 16u
+    border-radius 100%
+    border solid 1px rgb(221, 221, 221)
+    padding 1u
+    justify-content center
+    align-items center
+    +tablet()
+        width 24u
+        height 24u
+    +wide()
+        width 28u
+        height 28u
+
+.icon
+    justify-content center
+    align-items center
+    width 100%
+    height 100%
+    border-radius 100%
+    border solid 1px rgb(221, 221, 221)
+
+.title, .description, .subtitle
+    color #636363
+
+.subtitle
+    margin-top 4u
+    font-size 2.5u
+
+.description
+    color #636363
+    font-size 2u
+    margin-top 3u
+    letter-spacing 0
+    text-align center
+
+.button
+    margin-top 5u
+    +tablet()
+        margin-top 4u
+        width auto
+
+.list
+    box-sizing border-box
+    margin-top 4u
+    +tablet()
+        justify-content center
+        align-items center
+        flex-flow row wrap
+        margin-left -2u
+        margin-right -2u
+    +wide()
+        justify-content space-between
+        margin-left 0
+        margin-right 0
+
+.listItem
+    justify-content center
+    align-items center
+    margin-top 5u
+    &.first
+        margin-top 0
+    &.secondRow
+        +tablet()
+            margin-top 6u
+        +wide()
+            margin-top 0
+    +tablet()
+        margin-top 0
+        padding 0 2u
+        width: 50%
+    +wide()
+        padding 0
+        width: calc(33% - 5u)
+
+

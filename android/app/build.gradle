@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.startupjs_stellar1"
+        applicationId "com.stellar_sj"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

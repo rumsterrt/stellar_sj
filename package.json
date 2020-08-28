@@ -1,5 +1,5 @@
 {
-  "name": "startupjs_Stellar1",
+  "name": "stellar_sj",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "startupjs start",
     "test": "jest",
     "lint": "eslint .",
-    "metro": "react-native start --config metro.config.cjs --reset-cache",
+    "metro": "react-native start --reset-cache",
     "web": "startupjs web",
     "server": "startupjs server",
     "precommit": "lint-staged",
@@ -22,15 +22,20 @@
     "start-production": "startupjs start-production"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@startupjs/ui": "^0.23.17",
     "axios": "^0.19.2",
     "nconf": "^0.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-native": "0.63.0",
+    "react-native": "0.63.1",
+    "react-native-collapsible": "^1.5.2",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-svg": "^12.1.0",
     "react-native-web": "^0.12.0",
-    "startupjs": "^0.23.15"
+    "startupjs": "^0.23.17"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -57,6 +62,5 @@
       "git add"
     ]
   },
-  "type": "module",
   "sideEffects": []
 }

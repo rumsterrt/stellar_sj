@@ -3,12 +3,12 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'startupjs_Stellar1' do
+target 'stellar_sj' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'startupjs_Stellar1Tests' do
+  target 'stellar_sjTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +23,10 @@ target 'startupjs_Stellar1' do
   end
 end
 
-target 'startupjs_Stellar1-tvOS' do
-  # Pods for startupjs_Stellar1-tvOS
+target 'stellar_sj-tvOS' do
+  # Pods for stellar_sj-tvOS
 
-  target 'startupjs_Stellar1-tvOSTests' do
+  target 'stellar_sj-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
